@@ -15,7 +15,7 @@ public class RegistrationController {
     }
     // Register the form valeus
     @PostMapping("/register")
-    public String processForm(@ModelAttribute Student student, Model model) {
+    public String saveForm(@ModelAttribute Student student, Model model) {
         model.addAttribute("student", student);
         return "confirmation"; //Show confirmation page with submitted data
     }
